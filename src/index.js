@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 import Icon from './icon.png';
 import printMe from './print.js';
@@ -6,7 +5,7 @@ import printMe from './print.js';
 function component() {
   var element = document.createElement('div');
 
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  element.innerHTML = ['Hello', 'webpack'].join(' ');
   element.classList.add('hello');
   var btn = document.createElement('button');
 
